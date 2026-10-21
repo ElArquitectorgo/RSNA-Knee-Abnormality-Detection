@@ -67,6 +67,10 @@ main.py         Entry point: folds and training phases
 
 Main requirements: `torch`, `torchvision`, `numpy`, `pandas`, `scikit-learn`, `iterative-stratification`, `pydicom`, `tqdm`.
 
+```bash
+pip install -r requirements.txt
+```
+
 The data is **not** included in the repository (DICOM files, reports, labels and shards are listed in `.gitignore`). Place the competition data in the working directory and generate the shards first:
 
 ```bash
