@@ -237,7 +237,7 @@ def build_study_volume(study_uid, slots_uids, K=K, out_size=OUT_SIZE):
         try:
             series_dir = TRAIN_DIR / study_uid / series_uid
             slices = get_slices(series_dir)
-            slices = slices[int(len(slices) * 0.04): int(len(slices) * 0.96)]
+            slices = slices[int(len(slices) * 0.06): int(len(slices) * 0.94)]
             slices = subsample_to_budget(slices, K)
 
             vol = create_series_volume(series_uid, slices, size=out_size)  # (K, H, W) uint8
